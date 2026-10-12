@@ -1,6 +1,6 @@
 # Bounded method experiment
 
-Complete this before execution using actual evidence. Equivalent existing records are acceptable.
+Before execution, complete only Decision and baseline and Frozen comparison using available evidence. Complete Actual run after execution and Subsequent method use when later observations are available. Equivalent existing records are acceptable.
 
 ## Decision and baseline
 - Real problem and original outcome:
