@@ -1,10 +1,24 @@
 # Issue/PR closure and bounded improvement
 
+## Use the implementation
+
+The runnable entry for an agent is [SKILL.md](SKILL.md). It directs the agent to perform the task with existing authorized tools; it is not a daemon or a deterministic classifier. An LLM/agent host capable of reading skill files and using the required tools is needed. No sibling repository is required.
+
+1. Obtain this repository through your normal authorized Git workflow, retaining all package files together. Review the skill and resources before adoption.
+2. Install the repository folder as a skill named `bounded-improvement` through your host's documented skill installer or skill directory. Do not overwrite an existing customized installation; compare and preserve it first. Hosts without skill discovery can explicitly read `SKILL.md` and its task-relevant resources from the checked-out folder.
+3. Invoke it on an actual authorized work item: “Use $bounded-improvement for this actual closed work item. Find an existing retrospective before writing, save the authorized result, and verify readback. For an assigned method experiment, use Entry B instead.” Supply the original goal, existing work-item/destination reference and permitted effects. Let the agent recover available facts rather than supplying fictitious observations.
+4. Inspect the actual output and tool effects. A successful file load or syntax check is not actual-use acceptance. Missing tools/authority must be reported precisely rather than replaced with a simulated success.
+
+Updates replace only this package after review; preserve customization, active obligations and history. Removing its skill folder stops future discovery after the host refreshes, not obligations or pending work already created. Follow the host's documented reload behavior; no current-session activation is promised.
+
+Implementation and real-use evidence belong on the [owning work item](https://github.com/jack61714z/bounded-improvement/issues/1) and its linked candidate review. Until those observations are saved, actual use remains pending. Explicit invocation does not prove automatic selection or background event coverage.
+
+
 ## Purpose and adoption boundary
 
 Use actual Issue/PR closure to learn proportionately and validate justified improvements. This guide works with existing review text, closure comments and work-item history. It requires no particular work-order template, tracker product, shared schema/runtime, or companion document/version.
 
-This is an unactivated, independently maintained document. It grants no operational permission, changes no installed rules and demonstrates no efficacy. Use and redistribution are governed by the MIT license in this repository. Current host privacy, writer, review and effect-specific approval requirements remain effective. Progressive Investigation (PI), an investigation method, and an existing Chat–Codex handoff system (C2C) remain independent with their existing contracts unchanged.
+This repository includes an independently invocable agent skill. The package is not activated merely by publication. It grants no operational permission, changes no installed rules and demonstrates no efficacy. Use and redistribution are governed by the MIT license in this repository. Current host privacy, writer, review and effect-specific approval requirements remain effective. Progressive Investigation (PI), an investigation method, and an existing Chat–Codex handoff system (C2C) remain independent with their existing contracts unchanged.
 
 ## Cover actual closure and preserve work identity
 
@@ -77,3 +91,4 @@ Replace or remove this guide independently under the active host's authority. Pr
 Initial public document revision: 2026-10-12. Maintainer: jack61714z. Corrections may be proposed through this repository. Revised independently; sibling versions are not prerequisites. Publication does not activate this guidance, and behavioral efficacy remains unverified.
 
 This document includes adapted policy and record material from [codex-with-chatgpt](https://github.com/jack61714z/codex-with-chatgpt), licensed under MIT, Copyright (c) 2026 codex-with-chatgpt contributors. New contributions are Copyright (c) 2026 jack61714z. See [LICENSE](LICENSE) for the complete MIT terms and preserved notices.
+
