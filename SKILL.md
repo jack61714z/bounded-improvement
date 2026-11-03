@@ -1,6 +1,6 @@
 ---
 name: bounded-improvement
-description: Use when closing a real Issue or PR with evidence-backed lessons, or when explicitly comparing a bounded improvement-method experiment (M0/M1/M2) with actual use, cost and rollback evidence.
+description: Handle an actual Issue or PR closure with a saved, evidence-based retrospective, or run an explicitly requested bounded experiment on the method of generating and evaluating improvements, including later-use and recursive-link verification.
 ---
 
 # Bounded improvement
@@ -23,15 +23,13 @@ At the next comparable use, observe the actual action and result and save/read b
 
 ## B. Improvement-method experiment
 
-For an agent-run experiment, use supported exact Chat/Codex session and artifact reads when available: bind the task, model-initiated tool call/result, final output and parent completion before claiming real use. Measure Token use as total input (cached input is a subset), output and necessary model turns; smaller tool payloads or more cache hits do not establish lower Token use. Preserve counterevidence and append a dated correction to an incorrect coverage claim without rewriting the original run.
-
 Use this entry only when the assigned outcome is to improve how improvements are generated, diagnosed, compared or selected. It may start from a real demonstrated failure without pretending that a still-open Issue closed. Improving a task output or correcting a completion label alone is not recursive method improvement.
 
 Use [the experiment worksheet](templates/method-experiment.md) only for material facts; equivalent existing prose is valid. Preserve the actual current mechanism M0 and exact candidate M1. Identify what operation in candidate generation or evaluation changes and why evidence supports trying it. Do not deliberately weaken M0 to produce a win.
 
 Before execution, freeze comparable inputs and tools, observable success criteria, legitimate positive behavior, non-regression limits, cost bounds, rollback and stop conditions. Separate development examples from held-out cases when claiming generalization. A fixture must really construct the claimed condition. Preserve failed or inconclusive results; do not silently retune the standard.
 
-Run the authorized candidate method on a real improvement opportunity and inspect actual decisions/actions and outputs. Compare against M0 under the recorded conditions, including confounders and costs. Adopt, reject, defer or roll back based on evidence. No change and inconclusive evidence are valid; observed use alone is not benefit. A candidate cannot grant itself permissions or rewrite its original objective.
+Run the authorized candidate method on a real improvement opportunity and inspect actual decisions/actions and outputs. Compare against M0 under the recorded conditions, including confounders and costs. If either arm fails a required quality condition, retain its measurements but do not use it as an equal-quality benefit baseline. Smaller payloads alone do not establish lower whole-task Token use. Adopt, reject, defer or roll back based on evidence. No change and inconclusive evidence are valid; observed use alone is not benefit. A candidate cannot grant itself permissions or rewrite its original objective.
 
 After a bounded adoption or explicitly bounded trial, observe whether M1 actually participates in generating or evaluating a subsequent improvement-method candidate M2. Record which method was loaded, inputs, actual evaluation and disposition. Do not preselect a passing M2 or call an unchanged external process's second proposal recursion. M2 can be rejected; without the actual link it remains unobserved.
 

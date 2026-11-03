@@ -15,14 +15,14 @@ Before execution, complete only Decision and baseline and Frozen comparison usin
 - Development versus held-out cases, if generalization is claimed:
 - Observable decision/action success criteria:
 - Legitimate success controls and non-regression constraints:
-- Cost budget and observable cost measurement:
+- Cost budget and observable cost measurement (for model use: total input, cached subset, output and model round trips across the complete task):
 - Failure, stop and rollback conditions; responsible actor:
 
 ## Actual run (complete after execution)
 - Loaded M0/M1 identities and input evidence:
 - Actual operations, artifacts and results:
 - First failures, skipped checks, mismatches and confounders:
-- Benefit/regression/inconclusive comparison and cost:
+- Benefit/regression/inconclusive comparison and cost; if either arm misses required quality or source coverage, state the non-equivalence rather than claiming savings:
 - Adopt/reject/defer/rollback decision and allowed scope:
 - Authorized saved record and readback:
 
