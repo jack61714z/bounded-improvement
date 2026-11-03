@@ -1,6 +1,6 @@
 ---
 name: bounded-improvement
-description: Handle an actual Issue or PR closure with a saved, evidence-based retrospective, or run an explicitly requested bounded experiment on the method of generating and evaluating improvements, including later-use and recursive-link verification.
+description: Use when closing a real Issue or PR with evidence-backed lessons, or when explicitly comparing a bounded improvement-method experiment (M0/M1/M2) with actual use, cost and rollback evidence.
 ---
 
 # Bounded improvement
@@ -22,6 +22,8 @@ Save through the authorized existing tool and read back the actual content and l
 At the next comparable use, observe the actual action and result and save/read back that application account. Keep lesson stored, later use observed, application account saved and benefit demonstrated as four different claims. Existing guidance being sufficient is a valid reason not to add anything.
 
 ## B. Improvement-method experiment
+
+For an agent-run experiment, use supported exact Chat/Codex session and artifact reads when available: bind the task, model-initiated tool call/result, final output and parent completion before claiming real use. Measure Token use as total input (cached input is a subset), output and necessary model turns; smaller tool payloads or more cache hits do not establish lower Token use. Preserve counterevidence and append a dated correction to an incorrect coverage claim without rewriting the original run.
 
 Use this entry only when the assigned outcome is to improve how improvements are generated, diagnosed, compared or selected. It may start from a real demonstrated failure without pretending that a still-open Issue closed. Improving a task output or correcting a completion label alone is not recursive method improvement.
 
